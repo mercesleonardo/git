@@ -43,9 +43,45 @@ git push origin <nome-da-sua-branch>
 
 Substitua `<nome-da-sua-branch>` pelo nome da branch que você deseja enviar.
 
-**5. Atualizando Branches Locais:**
+**5. Efetuando Commits no Git
 
-**5.1 Usando `git fetch`:**
+O commit é o processo de registrar as alterações feitas nos seus arquivos localmente no seu repositório Git. É uma prática essencial para manter um histórico de suas modificações e colaborar com outros desenvolvedores.
+
+**Siga estes passos para realizar um commit no Git:**
+
+1. **Adicione os arquivos que você deseja registrar ao índice de staging:**
+
+```bash
+git add <nome-do-arquivo>
+```
+
+Você pode adicionar vários arquivos de uma vez usando o seguinte comando:
+
+```bash
+git add .
+```
+
+Este comando adiciona todos os arquivos modificados no diretório atual ao índice de staging.
+
+2. **Crie um commit com uma mensagem descritiva:**
+
+```bash
+git commit -m "Mensagem descritiva das alterações"
+```
+
+A mensagem do commit deve ser clara e concisa, resumindo as modificações que você está registrando.
+
+3. **Verifique o histórico de commits:**
+
+```bash
+git log
+```
+
+Este comando irá mostrar o histórico de commits do seu repositório local, incluindo a mensagem de cada commit.
+
+**6. Atualizando Branches Locais:**
+
+**6.1 Usando `git fetch`:**
 
 O comando `git fetch` é útil para verificar se há atualizações no repositório remoto sem integrar as alterações à sua branch local:
 
@@ -55,7 +91,7 @@ git fetch origin
 
 Este comando irá baixar as últimas alterações do repositório remoto para o seu computador local, mas não irá mesclá-las com a sua branch atual.
 
-**5.2 Usando `git pull`:**
+**6.2 Usando `git pull`:**
 
 O comando `git pull` é mais poderoso que o `git fetch`. Ele não apenas verifica se há atualizações, mas também as integra à sua branch local:
 
@@ -65,7 +101,7 @@ git pull origin <nome-da-branch>
 
 Este comando irá baixar as últimas alterações da branch `<nome-da-branch>` do repositório remoto e mesclá-las com a sua branch local.
 
-**6. Visualizando Branches:**
+**7. Visualizando Branches:**
 
 Para ver uma lista de todas as branches existentes em seu repositório, incluindo a branch atual, utilize o comando `git branch`:
 
@@ -75,9 +111,9 @@ git branch
 
 A branch atual será marcada com um asterisco (*) ao lado do nome.
 
-**7. Realizando Merge:**
+**8. Realizando Merge:**
 
-**7.1 Integrando uma Hotfix:**
+**8.1 Integrando uma Hotfix:**
 
 Suponha que você precisa integrar a branch `hotfix/SERV04/v0.0.1` na branch `developer`. Siga estas etapas:
 
