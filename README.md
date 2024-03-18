@@ -43,7 +43,7 @@ git push origin <nome-da-sua-branch>
 
 Substitua `<nome-da-sua-branch>` pelo nome da branch que você deseja enviar.
 
-**5. Efetuando Commits no Git
+**5. Efetuando Commits no Git:**
 
 O commit é o processo de registrar as alterações feitas nos seus arquivos localmente no seu repositório Git. É uma prática essencial para manter um histórico de suas modificações e colaborar com outros desenvolvedores.
 
