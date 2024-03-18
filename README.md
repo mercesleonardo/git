@@ -121,11 +121,3 @@ git push origin developer
 * Crie branches para cada nova tarefa ou feature que você estiver trabalhando.
 * Faça merges frequentemente para integrar suas alterações à branch principal.
 * Utilize ferramentas visuais como o SourceTree ou o GitKraken para facilitar o gerenciamento de branches.
-
-**Conclusão:**
-
-Este guia te forneceu uma base sólida para dominar o uso de branches e merge no Git. Com prática, você será capaz de gerenciar seus projetos de forma eficiente e colaborar com outros desenvolvedores com facilidade.
-
-**Recursos Adicionais:**
-
-* [Documentação oficial do Git](https://git-scm
