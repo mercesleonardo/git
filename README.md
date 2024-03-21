@@ -9,13 +9,15 @@ Este guia detalhado irá te levar do básico ao avançado no uso de branches e m
 * Ter o Git instalado e configurado em seu computador.
 * Familiaridade com os comandos básicos do Git (commit, push, pull, etc.).
 
-**1. Verificando a Existência da Branch "Developer":**
+**1. Visualizando Branches:**
+
+Para ver uma lista de todas as branches existentes em seu repositório, incluindo a branch atual, utilize o comando `git branch`:
 
 ```bash
-git branch -l
+git branch
 ```
 
-Este comando lista todas as branches existentes no seu repositório local. Se a branch "developer" estiver na lista, você pode seguir para a próxima etapa.
+A branch atual será marcada com um asterisco (*) ao lado do nome.
 
 **2. Mudando para a Branch "Developer":**
 
@@ -33,17 +35,7 @@ git checkout -b <nome-da-sua-nova-branch>
 
 Crie uma nova branch a partir da branch "developer" usando o comando acima, substituindo `<nome-da-sua-nova-branch>` pelo nome desejado para a sua nova branch.
 
-**4. Enviando Branches para o Repositório Remoto:**
-
-Após criar e fazer alterações em uma branch local, você precisa enviá-la para o repositório remoto para que outras pessoas possam acessá-la. Utilize o comando `git push`:
-
-```bash
-git push origin <nome-da-sua-branch>
-```
-
-Substitua `<nome-da-sua-branch>` pelo nome da branch que você deseja enviar.
-
-**5. Efetuando Commits no Git:**
+**4. Efetuando Commits no Git:**
 
 O commit é o processo de registrar as alterações feitas nos seus arquivos localmente no seu repositório Git. É uma prática essencial para manter um histórico de suas modificações e colaborar com outros desenvolvedores.
 
@@ -79,6 +71,16 @@ git log
 
 Este comando irá mostrar o histórico de commits do seu repositório local, incluindo a mensagem de cada commit.
 
+**5. Enviando Branches para o Repositório Remoto:**
+
+Após criar e fazer alterações em uma branch local, você precisa enviá-la para o repositório remoto para que outras pessoas possam acessá-la. Utilize o comando `git push`:
+
+```bash
+git push origin <nome-da-sua-branch>
+```
+
+Substitua `<nome-da-sua-branch>` pelo nome da branch que você deseja enviar.
+
 **6. Atualizando Branches Locais:**
 
 **6.1 Usando `git fetch`:**
@@ -101,19 +103,9 @@ git pull origin <nome-da-branch>
 
 Este comando irá baixar as últimas alterações da branch `<nome-da-branch>` do repositório remoto e mesclá-las com a sua branch local.
 
-**7. Visualizando Branches:**
+**7. Realizando Merge:**
 
-Para ver uma lista de todas as branches existentes em seu repositório, incluindo a branch atual, utilize o comando `git branch`:
-
-```bash
-git branch
-```
-
-A branch atual será marcada com um asterisco (*) ao lado do nome.
-
-**8. Realizando Merge:**
-
-**8.1 Integrando uma Hotfix:**
+**7.1 Integrando uma Hotfix:**
 
 Suponha que você precisa integrar a branch `hotfix/SERV04/v0.0.1` na branch `developer`. Siga estas etapas:
 
